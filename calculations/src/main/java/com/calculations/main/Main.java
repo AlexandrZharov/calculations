@@ -16,10 +16,12 @@ public class Main {
 	}
 
 	static MultiplicationService<?> getService(String condition) {
-		if(condition == "1")
+		if(condition.equals("1")) {
+			System.out.println("Using BigIntegerService");
 			return new MultiplicationBigIntegerService();
-		else
+		} else {
+			System.out.println("Using FromScratchService");
 			return new MultiplicationFromScratchService();
-		
+		}
 	}
 }
