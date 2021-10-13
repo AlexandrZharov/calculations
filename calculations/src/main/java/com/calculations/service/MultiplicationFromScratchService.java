@@ -5,6 +5,7 @@ public class MultiplicationFromScratchService implements MultiplicationService<S
 	@Override
 	public String calculate(String strA, String strB) {
 		String beforeResult = "";
+		// Getting result sign
 		if ((strA.charAt(0) == '-' || strA.charAt(0) == '-') &&
 		    (strA.charAt(0) != '-' || strA.charAt(0) != '-'))
 			beforeResult = "-";
